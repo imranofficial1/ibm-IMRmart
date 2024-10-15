@@ -1,0 +1,102 @@
+body {
+    font-family: 'Courier New', monospace; 
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a); 
+    margin: 0;
+    padding: 0;
+    color: #ccc; 
+}
+
+.your-orders {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.8); 
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2); 
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #00ff00; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-item {
+    border: 1px solid #00ff00; 
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #222; 
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.order-item:hover {
+    background-color: #444; 
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3); 
+}
+
+.order-item h2 {
+    font-size: 1.5rem;
+    color: #00ff00; 
+    margin: 0 0 10px;
+}
+
+.order-item p {
+    font-size: 1rem;
+    color: #ccc; 
+    margin: 5px 0;
+}
+
+.order-item p strong {
+    color: #00ff00; 
+}
+
+.cancel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e74c3c; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05);
+}
+
+.cancel-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5); 
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .your-orders {
+        padding: 15px;
+    }
+
+    .order-item {
+        padding: 10px;
+    }
+
+    .cancel-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

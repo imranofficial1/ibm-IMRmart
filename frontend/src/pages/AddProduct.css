@@ -1,0 +1,106 @@
+
+
+.add-product {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  box-shadow: 0 4px 20px rgba(0, 255, 0, 0.2); 
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #00ff00; 
+}
+
+.add-product h2 {
+  text-align: center;
+  color: #00ff00; 
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
+}
+
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-product label {
+  font-size: 1em;
+  color: #fff; 
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.add-product input[type="text"],
+.add-product input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444; 
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border 0.3s;
+  text-align: center;
+  background-color: #222; 
+  color: #fff; 
+}
+
+.add-product input[type="text"]:focus,
+.add-product input[type="number"]:focus {
+  border-color: #00ff00; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3); 
+}
+
+.add-product button {
+  padding: 12px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #ff6347; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; 
+  margin-top: 10px;
+}
+
+.add-product button:hover {
+  background-color: #ff4500; 
+  transform: scale(1.05); 
+}
+
+.add-product button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); 
+}
+
+.add-product input[required]::before {
+  content: "*";
+  color: red;
+}
+
+.add-product input::placeholder {
+  color: #aaa; 
+}
+
+.add-product input[type="text"]::placeholder,
+.add-product input[type="number"]::placeholder {
+  font-style: italic;
+  color: #bbb; 
+}
+
+@media (max-width: 677px) {
+  .add-product {
+      margin: 25px;
+      padding: 75px;
+  }
+
+  .add-product h2 {
+      font-size: 1.5em;
+  }
+
+  .add-product button {
+      font-size: 0.9em;
+      padding: 10px;
+  }
+}
